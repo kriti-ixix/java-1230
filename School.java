@@ -9,8 +9,7 @@ class School
         s1.calFees();
         double s1Fees = s1.getFees();
 
-        Student s2 = new Student();
-        s2.name = "XYZ";
+        Student s2 = new Student("XYZ");
         s2.rollno = 2;
         s2.course = "Web";
         s2.calFees(6);
@@ -27,6 +26,17 @@ class Student
     int rollno;
     String course;
     double fees;
+
+    Student()
+    {
+        System.out.println("Welcome to our school!");
+    }
+
+    Student(String n)
+    {
+        name = n;
+        System.out.println("Welcome to our school, " + n + "!");
+    }
 
     void calFees(int months)
     {
