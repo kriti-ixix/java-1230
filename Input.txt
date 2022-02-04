@@ -1,2 +1,4 @@
 This is my new file
 Added some new text here
+BufferedReader is being used here
+Data is in String form
