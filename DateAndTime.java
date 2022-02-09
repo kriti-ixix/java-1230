@@ -6,7 +6,7 @@ class DateAndTime
     public static void main(String[] args)
     {
         Date date = new Date();
-        System.out.println(date.toString());
+        System.out.println(date.getInfo());
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy");
         String formattedDate = sdf.format(date);
